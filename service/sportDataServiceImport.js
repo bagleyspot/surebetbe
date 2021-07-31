@@ -68,7 +68,7 @@ const taskImportDataFromSportDataApi = () => { cron.schedule('01 13 * * *', asyn
 
 })}
 
-
+//Metodo che realizza la ricerca della surebet per singolo bookmakers
 function sureBetCalc(match){
     match.bookMaker.bookmakers.forEach( elem => {
         const home = elem.odds_data.home;
