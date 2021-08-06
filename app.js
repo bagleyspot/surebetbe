@@ -1,10 +1,8 @@
 const express = require('express');
 const app = express();
-const cors = require('cors');
 const connectionMongo = require('./connection/mongodb/connectionMongo')
-const sportDataApi = require('./api/sportDataApi')
+const sportDataImportController = require('./controller/sportDataImportController')
 const sportDataServiceImport = require('./service/sportDataServiceImport')
-
 require('dotenv/config');
 
 //Setto il server sulla porta di ascolto
@@ -18,6 +16,8 @@ connectionMongo.CON.connectioDB()
  * Operazione schedulata di import delle partite con le rispettive quotazioni
  */
 sportDataServiceImport.CRON.taskImportDataFromSportDataApi();
+
+app.use(sportDataImportController);
 
 
 /** navigazione country -> league -> season -> match**/

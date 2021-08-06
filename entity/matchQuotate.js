@@ -28,11 +28,13 @@ const MatchQuotate = mongoose.Schema({
     },
     status: {
         type: String,
-        required: true
+        required: false,
+        default: ""
     },
     bookMaker: {
         type: [],
-        required: true
+        required: false,
+        default: []
     }
 })
 
