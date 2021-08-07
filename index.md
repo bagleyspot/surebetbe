@@ -1,15 +1,5 @@
 # SureBetBe
 ## _V.0.0.1_
-
- [![Build Status]( https://travis-ci.com/sourheartita/surebetbe.svg?token=ZAMnLsdoeyAp5qxtny53&branch=main)](https://travis-ci.com/github/sourheartita/surebetbe)
- ![Docker Pulls](https://img.shields.io/docker/pulls/sourheart/surebet-app)
- ![Image Size](https://img.shields.io/docker/image-size/sourheart/surebet-app?sort=date)
- ![Version](https://img.shields.io/docker/v/sourheart/surebet-app?sort=date)
- ![Rating](https://img.shields.io/docker/stars/sourheart/surebet-app)
- ![Contributors](https://img.shields.io/github/contributors/sourheartita/surebetbe)
- ![Last Commit](https://img.shields.io/github/last-commit/sourheartita/surebetbe)
- ![Downloads](https://img.shields.io/github/downloads/sourheartita/surebetbe/total)
- ![Size](https://img.shields.io/github/languages/code-size/sourheartita/surebetbe)
  
  ## What is SureBetBe
  SureBetBe it's a BackEnd Application that analizing the bookmakers for different league of football and find the surebets
