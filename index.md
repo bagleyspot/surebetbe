@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# SureBetBe
+## _V.0.0.1_
 
-You can use the [editor on GitHub](https://github.com/sourheartita/surebetbe/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+ [![Build Status]( https://travis-ci.com/sourheartita/surebetbe.svg?token=ZAMnLsdoeyAp5qxtny53&branch=main)](https://travis-ci.com/github/sourheartita/surebetbe)
+ ![Docker Pulls](https://img.shields.io/docker/pulls/sourheart/surebet-app)
+ ![Image Size](https://img.shields.io/docker/image-size/sourheart/surebet-app?sort=date)
+ ![Version](https://img.shields.io/docker/v/sourheart/surebet-app?sort=date)
+ ![Rating](https://img.shields.io/docker/stars/sourheart/surebet-app)
+ ![Contributors](https://img.shields.io/github/contributors/sourheartita/surebetbe)
+ ![Last Commit](https://img.shields.io/github/last-commit/sourheartita/surebetbe)
+ ![Downloads](https://img.shields.io/github/downloads/sourheartita/surebetbe/total)
+ ![Size](https://img.shields.io/github/languages/code-size/sourheartita/surebetbe)
+ ## What is SureBetBe
+ SureBetBe it's a BackEnd Application that analizing the bookmakers for different league of football and find the surebets
+ When SureBetBet will find a surebet, it save in the db and can return the surebet in JSON with a REST EndPoint
+ 
+ ## Technologies
+ - NodeJs
+ - MongoDB
+ - TelegramBot
+ - SportDataApi (for source of match and bookmakers)
+ - Docker
+ - Google App Engine
+ ## First Step
+ - Import the Project with github
+ ```sh
+gh repo clone sourheartita/surebetbe
 ```
+ - Create file .env
+ ```.env
+PORTSERVER=8080
+URL_DATABASE=<url database remote>
+BASE_URL=https://app.sportdataapi.com
+API_VERSION=/api/v1/
+SEASON_ID=2024
+API_KEY=<key api sport data api>
+TOKEN_TELEGRAM=<key telegram bot>
+```
+ ## Guide
+ TODO
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sourheartita/surebetbe/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
