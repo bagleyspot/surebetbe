@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "",
     "run": "npm run serve"
   },
   "keywords": [],
@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "mocha": "^9.0.3",
     "mongoose": "^5.13.5",
     "node-telegram-bot-api": "^0.54.0"
   },
